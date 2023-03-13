@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 @NoArgsConstructor
 @RequiredArgsConstructor
@@ -16,5 +17,5 @@ public class Customer {
     @Id private String id;
     @NonNull private String email;
     @NonNull private String name;
-    private CustomerState state = CustomerState.NEW;
+    @Setter private CustomerState state = CustomerState.NEW;
 }
